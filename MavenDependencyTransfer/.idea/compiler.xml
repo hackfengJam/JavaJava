@@ -9,6 +9,7 @@
         <module name="hongxing-bige" />
         <module name="hongxingnange" />
         <module name="hongxingshanji" />
+        <module name="webdemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="hongxingorg" target="1.5" />
       <module name="hongxingparent" target="1.5" />
       <module name="hongxingshanji" target="1.5" />
+      <module name="webdemo" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

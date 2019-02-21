@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/hongxingorg/hongxingorg.iml" filepath="$PROJECT_DIR$/hongxingorg/hongxingorg.iml" />
       <module fileurl="file://$PROJECT_DIR$/hongxingparent/hongxingparent.iml" filepath="$PROJECT_DIR$/hongxingparent/hongxingparent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hongxingshanji/hongxingshanji.iml" filepath="$PROJECT_DIR$/hongxingshanji/hongxingshanji.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webdemo/webdemo.iml" filepath="$PROJECT_DIR$/webdemo/webdemo.iml" />
     </modules>
   </component>
 </project>
