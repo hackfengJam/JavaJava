@@ -9,21 +9,27 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>3.8.1</version>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+        </dependency>
     </dependencies>
     <build>
-        <plugins>org.apache.maven.plugins</plugins>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>2.4</version>
-        <extensions>
-            <extension>
-                <phase>package</phase>
-                <goals>
-                    <goal>jar-no-fork</goal>
-                </goals>
-            </extension>
-        </extensions>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 </project>
