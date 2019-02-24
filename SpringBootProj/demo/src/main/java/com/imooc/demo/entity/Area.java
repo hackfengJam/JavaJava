@@ -7,10 +7,12 @@ public class Area {
     private Integer areaId;
     // 名称
     private String areaName;
+    // 优先级
+    private int priority;
     // 创建时间
     private Date createTime;
     // 更新时间
-    private Date updateTime;
+    private Date lastEditTime;
 
     public Integer getAreaId() {
         return areaId;
@@ -28,6 +30,10 @@ public class Area {
         this.areaName = areaName;
     }
 
+    public int getPriority() { return priority; }
+
+    public void setPriority(int priority) { this.priority = priority; }
+
     public Date getCreateTime() {
         return createTime;
     }
@@ -36,11 +42,11 @@ public class Area {
         this.createTime = createTime;
     }
 
-    public Date getUpdateTime() {
-        return updateTime;
+    public Date getLastEditTime() {
+        return lastEditTime;
     }
 
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
+    public void setLastEditTime(Date lastEditTime) {
+        this.lastEditTime = lastEditTime;
     }
 }

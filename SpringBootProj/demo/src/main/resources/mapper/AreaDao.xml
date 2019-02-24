@@ -27,7 +27,7 @@
         <set>
             <if test="areaName!=null">area_name=#{areaName},</if>
             <if test="priority!=null">priority=#{priority},</if>
-            <if test="lastEditTime">last_edit_time=#{lastEditTime},</if>
+            <if test="lastEditTime">last_edit_time=#{lastEditTime}</if>
             WHERE area_id=#{areaId}
         </set>
     </update>
