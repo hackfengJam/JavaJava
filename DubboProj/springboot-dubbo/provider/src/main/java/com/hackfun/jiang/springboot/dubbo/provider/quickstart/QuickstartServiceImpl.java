@@ -1,7 +1,7 @@
 package com.hackfun.jiang.springboot.dubbo.provider.quickstart;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.hackfun.jiang.springboot.dubbo.ServiceAPI;
+import com.hackfun.jiang.springboot.ServiceAPI;
 import org.springframework.stereotype.Component;
 
 @Component

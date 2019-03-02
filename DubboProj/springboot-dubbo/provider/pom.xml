@@ -41,6 +41,12 @@
             <artifactId>zkclient</artifactId>
             <version>0.10</version>
         </dependency>
+
+		<dependency>
+			<groupId>com.hackfun.jiang.springboot</groupId>
+			<artifactId>dubbo-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
