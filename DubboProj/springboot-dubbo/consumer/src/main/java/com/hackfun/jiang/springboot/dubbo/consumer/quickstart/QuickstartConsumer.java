@@ -3,8 +3,7 @@ package com.hackfun.jiang.springboot.dubbo.consumer.quickstart;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.hackfun.jiang.springboot.ServiceAPI;
 import org.springframework.stereotype.Component;
-
-@Component
+//@Component
 public class QuickstartConsumer {
 
     @Reference(interfaceClass = ServiceAPI.class)

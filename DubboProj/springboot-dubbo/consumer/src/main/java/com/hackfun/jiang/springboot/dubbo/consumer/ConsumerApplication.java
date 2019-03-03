@@ -1,7 +1,7 @@
 package com.hackfun.jiang.springboot.dubbo.consumer;
 
 import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
-import com.hackfun.jiang.springboot.dubbo.consumer.quickstart.QuickstartConsumer;
+import com.hackfun.jiang.springboot.dubbo.consumer.transaction.TransactionConsumer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -10,12 +10,14 @@ import org.springframework.context.ConfigurableApplicationContext;
 @EnableDubboConfiguration
 public class ConsumerApplication {
 
-	public static void main(String[] args) {
-		ConfigurableApplicationContext run = SpringApplication.run(ConsumerApplication.class, args);
+    public static void main(String[] args) {
+        ConfigurableApplicationContext run = SpringApplication.run(ConsumerApplication.class, args);
 
-		QuickstartConsumer quickstartConsumer = (QuickstartConsumer) run.getBean("quickstartConsumer");
+//		QuickstartConsumer quickstartConsumer = (QuickstartConsumer) run.getBean("quickstartConsumer");
+//		quickstartConsumer.sendMessage("百万年薪");
 
-		quickstartConsumer.sendMessage("百万年薪");
-	}
+        TransactionConsumer transactionConsumer = (TransactionConsumer) run.getBean("transactionConsumer");
+        transactionConsumer.sendMessage("4,5");
+    }
 
 }

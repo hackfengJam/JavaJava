@@ -4,10 +4,17 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.hackfun.jiang.springboot.ServiceAPI;
 import org.springframework.stereotype.Component;
 
-@Component
-@Service(interfaceClass = ServiceAPI.class)
-public class QuickstartServiceImpl implements ServiceAPI{
-    @Override
+//@Component
+//@Service(interfaceClass = ServiceAPI.class)
+//public class QuickstartServiceImpl implements ServiceAPI{
+//public class QuickstartServiceImpl implements ServiceAPI{
+//    @Override
+//    public String sendMessage(String message) {
+//        return "quickstart-provider-message="+message;
+//    }
+//}
+public class QuickstartServiceImpl {
+
     public String sendMessage(String message) {
         return "quickstart-provider-message="+message;
     }
