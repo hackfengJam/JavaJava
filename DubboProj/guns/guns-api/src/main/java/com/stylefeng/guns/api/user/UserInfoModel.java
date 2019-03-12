@@ -2,6 +2,7 @@ package com.stylefeng.guns.api.user;
 
 public class UserInfoModel {
 
+    private Integer uuid;
     private String username;
     private String nickname;
     private String email;
@@ -12,8 +13,16 @@ public class UserInfoModel {
     private String biography; // 个人简介
     private String address;  // 地址
     private String headAddress; // 头像地址
-    private long createTime;
+    private long beginTime;
     private long updateTime;
+
+    public Integer getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(Integer uuid) {
+        this.uuid = uuid;
+    }
 
     public String getUsername() {
         return username;
@@ -95,12 +104,12 @@ public class UserInfoModel {
         this.headAddress = headAddress;
     }
 
-    public long getCreateTime() {
-        return createTime;
+    public long getBeginTime() {
+        return beginTime;
     }
 
-    public void setCreateTime(long createTime) {
-        this.createTime = createTime;
+    public void setBeginTime(long beginTime) {
+        this.beginTime = beginTime;
     }
 
     public long getUpdateTime() {
